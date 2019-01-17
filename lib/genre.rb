@@ -1,4 +1,4 @@
-class Song
+class Genre
   attr_accessor :name
   @@all = []
 
@@ -11,9 +11,9 @@ class Song
   end
 
   def self.create(name)
-    new_song = Song.new(name)
-    new_song.save
-    new_song
+    new_genre = genre.new(name)
+    new_genre.save
+    new_genre
   end
 
   def initialize(name)
