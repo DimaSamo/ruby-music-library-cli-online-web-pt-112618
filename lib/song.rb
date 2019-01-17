@@ -36,7 +36,7 @@ class Song
   def self.find_by_name(name)
     @@all.map do |song|
       song if song.name == name
-    end.compact
+    end.compact[0]
   end
 
 
