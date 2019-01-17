@@ -10,12 +10,12 @@ class Song
     @@all.clear
   end
 
-  def initialize(name)
-    @name = name
-  end
-
   def self.create(name)
     Song.new(name).save
+  end
+
+  def initialize(name)
+    @name = name
   end
 
   def save
