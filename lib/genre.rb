@@ -1,6 +1,7 @@
 class Genre
   attr_accessor :name
   attr_reader :songs
+  extends Concerns::Findable
   @@all = []
 
   def self.all
