@@ -22,6 +22,11 @@ class Genre
     @songs = []
   end
 
+  def add_song(song)
+    song.genre = self if song.genre == nil
+    @songs.push(song) unless @songs.include?(song)
+  end
+
   def save
     @@all << self
   end
