@@ -51,7 +51,7 @@ class Song
     new_song.artist = Artist.find_or_create_by_name(artist)
     new_song.artist.add_song(new_song)
     new_song.genre = Genre.find_or_create_by_name(genre)
-    mew_song.genre.add_song(new_song)
+    new_song.genre.add_song(new_song)
     new_song
   end
 
