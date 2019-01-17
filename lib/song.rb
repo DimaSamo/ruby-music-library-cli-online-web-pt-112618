@@ -10,7 +10,7 @@ class Song
     @@all.clear
   end
 
-  def self.create(name)
+  def self.create(name, arist="nil")
     new_song = Song.new(name)
     new_song.save
     new_song
