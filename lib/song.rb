@@ -22,7 +22,7 @@ class Song
     self.artist = artist unless artist == nil
     @artist = artist
     self.genre = genre unless genre == nil
-    @genre = genre
+
 
   end
 
