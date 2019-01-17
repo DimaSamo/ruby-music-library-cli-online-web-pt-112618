@@ -14,7 +14,12 @@ class Song
     @name = name
   end
 
+  def create(name)
+    Song.new(name).save
+  end
+
   def save
     @@all.push(self)
   end
+
 end
