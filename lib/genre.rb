@@ -27,6 +27,12 @@ class Genre
     @songs.push(song) unless @songs.include?(song)
   end
 
+  def artists
+    @songs.map do |song|
+      song.artist
+    end.uniq
+  end
+
   def save
     @@all << self
   end
