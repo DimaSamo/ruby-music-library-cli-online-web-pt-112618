@@ -22,6 +22,11 @@ class Artist
     @songs = []
   end
 
+  def add_song(song)
+    song.artist || song.artist = self
+    @songs.push(song) unless @songs.include?(song)
+  end
+
 
   def save
     @@all << self
