@@ -16,7 +16,7 @@ class Song
     new_song
   end
 
-  def initialize(name, arist="nil")
+  def initialize(name, artist="nil")
     @name = name
     @artist = artist
   end
