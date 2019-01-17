@@ -19,7 +19,7 @@ class Song
   end
 
   def save
-    @@all.push(self)
+    @@all < self
   end
 
 end
