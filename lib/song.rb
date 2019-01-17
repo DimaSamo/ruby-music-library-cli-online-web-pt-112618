@@ -33,6 +33,12 @@ class Song
     genre.add_song(self)
   end
 
+  def self.find_by_name(name)
+    @@all.map do |song|
+      song if song.name == name
+    end.compact
+  end
+
 
   def save
     @@all << self
